@@ -71,32 +71,51 @@
 
 
 
-<div id="contact-form">
+  <div id="contact-form">
+
+
     <div id="form" class="opacity-contact">
-      <form id="myForm" action="#">
-        <div class="input-line">
-          <input id="name" type="text" placeholder="NAME" class="input-same-line" required>
-          <input id="email" type="email" placeholder="EMAIL" class="input-same-line" required>
-        </div>
-        <div class="input-line-column">
-          <input id="subject" type="text" placeholder="SUBJECT" required>
-          <textarea name="textarea" id="body" class="textarea" placeholder="MESSAGE" required></textarea>
-        </div>
-        <div class="input-line">
-          <input type="checkbox" id="rock" name="genre" value="Rock" required>
-          <label for="rock">Rock</label>
-          <input type="checkbox" id="pop" name="genre" value="Pop">
-          <label for="pop">Pop</label>
-          <input type="checkbox" id="hiphop" name="genre" value="Hip Hop">
-          <label for="hiphop">Hip Hop</label>
-          <input type="checkbox" id="electronic" name="genre" value="Electronic">
-          <label for="electronic">Electronic</label>
-        </div>
-        <button type="button" id="submit" class="hover">Send</button>
-        <div id="message">INVALID EMAIL</div>
-      </form>
+
+            <form  id ="myForm" action="#">
+              <div class="input-line">
+                <input id="name" type="text" placeholder="NAME" class="input-same-line" required>
+                <input id="email" type="email" placeholder="EMAIL" class="input-same-line" required>
+              </div>
+              <div class="input-line-column">
+                <input id="subject" type="text" placeholder="SUBJECT" class="input-same-line" required>
+                <input id="number" type="number" placeholder="PHONE" class="input-same-line" required>
+                <textarea name="textarea" id="body" class="textarea" placeholder="MESSAGE" required></textarea>
+              
+                <table style=" margin-top: 15px;">
+                  <tr>
+                  <th style="opacity: 0.5">
+                    What genre do you prefer?
+                  </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" id="rock" name="genre" value="Rock" required>
+                         <p><label for="rock">Rock</label></p>
+                          <input type="checkbox" id="pop" name="genre" value="Pop">
+
+                         <p><label for="pop">Pop</label></p>
+            <input type="checkbox" id="hiphop" name="genre" value="Hip Hop">
+            <p><label for="hiphop">Hip Hop</label></p>
+            <input type="checkbox" id="electronic" name="genre" value="Electronic">
+            <p><label for="electronic">Electronic</label><p>
+                      </td>
+                    </tr>
+
+                </table>
+          
+              </div>
+             <button type="button" id="submit" class="hover">Send</button>
+             <div id="message">INVALID EMAIL</div>
+            </form>
+          
     </div>
-  </div>
+</div>
+
   
     
 
