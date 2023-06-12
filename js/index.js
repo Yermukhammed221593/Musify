@@ -318,6 +318,10 @@ paceOptions = {
     document.getElementById("demo").style.backgroundColor = "green";
   }
 
+  window.onload = function() {
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementById('date-input').setAttribute('min', today);
+  };
 
   
  

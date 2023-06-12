@@ -85,7 +85,8 @@
                 <input id="subject" type="text" placeholder="SUBJECT" class="input-same-line" required>
                 <input id="number" type="number" placeholder="PHONE" class="input-same-line" required>
                 <textarea name="textarea" id="body" class="textarea" placeholder="MESSAGE" required></textarea>
-              
+                <label for="date-input" style="opacity: 0.5;">Select a date:</label>
+                <input type="date" id="date-input" name="date" required>
                 <table style=" margin-top: 15px;">
                   <tr>
                   <th style="opacity: 0.5">
@@ -99,17 +100,17 @@
                           <input type="checkbox" id="pop" name="genre" value="Pop">
 
                          <p><label for="pop">Pop</label></p>
-            <input type="checkbox" id="hiphop" name="genre" value="Hip Hop">
-            <p><label for="hiphop">Hip Hop</label></p>
-            <input type="checkbox" id="electronic" name="genre" value="Electronic">
-            <p><label for="electronic">Electronic</label><p>
-                      </td>
+              <input type="checkbox" id="hiphop" name="genre" value="Hip Hop">
+              <p><label for="hiphop">Hip Hop</label></p>
+              <input type="checkbox" id="electronic" name="genre" value="Electronic">
+              <p><label for="electronic">Electronic</label><p>
+                        </td>
                     </tr>
 
                 </table>
           
               </div>
-             <button type="button" id="submit" class="hover">Send</button>
+             <button type="submit" id="submit" class="hover">Send</button>
              <div id="message">INVALID EMAIL</div>
             </form>
           
