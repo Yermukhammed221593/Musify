@@ -130,6 +130,45 @@ paceOptions = {
   });
 
 
+
+//NAVIGATION CONTENT HOVER EFFECT 
+  $(function(){
+
+ TweenMax.set(".project-preview", { width: 0 });
+
+  $('.navigation-content ul li a').on('mouseover',function(){
+      gsap.to('.project-preview',1,{width:'200px',ease: Expo.easeInOut})
+  })
+
+
+  $('.navigation-content ul li a').on('mouseout',function(){
+    gsap.to('.project-preview',1,{width:'0px',ease: Expo.easeInOut})
+})
+
+
+$(".navigation-content ul li a").hover(function(e) {
+    var img = e.currentTarget.dataset.img;
+
+    $(".project-preview").css({ "background-image": `url(${img}) `});
+ 
+  });
+  
+
+    var $img = $('.project-preview');
+      function cursormover(e){
+       gsap.to( $img, {
+         x : e.clientX,
+         y : e.clientY,
+        })
+      }
+      $('.navigation-content').on('mousemove',cursormover);
+  })
+
+   
+
+
+
+
    //NAVIGATION CONTENT 
     $(function(){
         $('.menu-bar').on('click',function(){
@@ -314,14 +353,8 @@ paceOptions = {
       });
   }
 
-  function myFunction() {
-    document.getElementById("demo").style.backgroundColor = "green";
-  }
 
-  window.onload = function() {
-    var today = new Date().toISOString().split('T')[0];
-    document.getElementById('date-input').setAttribute('min', today);
-  };
+
 
   
  

@@ -7,7 +7,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      
        <link rel="icon" type="image/png" href="images/favicon.png">
      
@@ -83,7 +83,7 @@
               </div>
               <div class="input-line-column">
                 <input id="subject" type="text" placeholder="SUBJECT" class="input-same-line" required>
-                <input id="number" type="number" placeholder="PHONE" class="input-same-line" required>
+                <input id="phone" type="tel" placeholder="PHONE" pattern="\+\d{10}" class="input-same-line" required>
                 <textarea name="textarea" id="body" class="textarea" placeholder="MESSAGE" required></textarea>
                 <label for="date-input" style="opacity: 0.5;">Select a date:</label>
                 <input type="date" id="date-input" name="date" required>
@@ -110,7 +110,7 @@
                 </table>
           
               </div>
-             <button type="submit" id="submit" class="hover">Send</button>
+             <button type="submit" id="submit" class="hover" >Send</button>
              <div id="message">INVALID EMAIL</div>
             </form>
           

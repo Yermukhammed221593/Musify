@@ -1203,7 +1203,7 @@ CONTACT ONE
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    background:#000f11;
+    background:#000000;
     color: rgb(240,240,240);
 }
 
@@ -2183,3 +2183,5 @@ BLOG-SINGLE-ONE
 ul {
     margin-right: 100px;
 }
+
+
