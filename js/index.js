@@ -1,27 +1,3 @@
-
-/* Table of content
---------------------------------------------
-
-========
-
---------
-LOADER
-ANIMATION ON PAGE LOAD
-ANIMATION ON PAGE SCROLL
-SONGS PROGRESS ANIMATION
-NAVIGATION CONTENT HOVER EFFECT
-NAVIGATION CONENT
-SONGS PLAYER
-CUSTOM CURSOR
-CIRLE EFFECT
-SLIDER ON SONGS PAGE
------------
-==========
-
-*/
-
-
-// LOADER
 paceOptions = {
     ajax: true,
     document: true,
@@ -41,7 +17,7 @@ paceOptions = {
         delay:1,
         onComplete: function() {
 
-            //ALL THE ANIMATIONS THAT WILL TAKE PLACE AFTER THE PAGE IS LOADED
+
 
 
             $('.text').each(function(){
@@ -80,7 +56,6 @@ paceOptions = {
 
 
 
-//ALL THE ANIMATIONS THAT WILL TAKE PLACE WHILE SCROLLING
 
 
     $(function () {
@@ -98,7 +73,7 @@ paceOptions = {
             }
         });
     });
-        //animation for songs page
+    
         if(document.querySelector('.fade-up') ){
             gsap.to('.fade-up',1,{opacity:1,y:0,delay:1,stagger:.1})
         }
@@ -119,7 +94,7 @@ paceOptions = {
 
 
 
-   // SCROLL PROGRESS ANIMATION
+  
 
    $(window).scroll(function() {
     var scroll = $(window).scrollTop(),
@@ -131,7 +106,7 @@ paceOptions = {
 
 
 
-//NAVIGATION CONTENT HOVER EFFECT 
+
   $(function(){
 
  TweenMax.set(".project-preview", { width: 0 });
@@ -169,7 +144,7 @@ $(".navigation-content ul li a").hover(function(e) {
 
 
 
-   //NAVIGATION CONTENT 
+ 
     $(function(){
         $('.menu-bar').on('click',function(){
             gsap.to('.navigation-content',1.5,{y:0, ease:'Expo.easeInOut'})
@@ -202,7 +177,7 @@ $(".navigation-content ul li a").hover(function(e) {
 
       
 
-    //SONGS PLAYER 
+   
     window.onload=function(){
         $('.play-song img').on('click',function(e){
             var song = e.currentTarget.dataset.song;
@@ -210,7 +185,7 @@ $(".navigation-content ul li a").hover(function(e) {
             var songtoplay = document.querySelector(`[data-audio="${song}"]`);
             
 
-            //if song is playing pause it
+          
             if (songtoplay.duration > 0 && !songtoplay.paused) {
 
                 songtoplay.pause()
@@ -226,9 +201,7 @@ $(".navigation-content ul li a").hover(function(e) {
             
             } 
   
-            //if song is not playing play it and if another song is playing mute the other song
-
-            //also change the play button image to pause
+           
             else {
 
 
@@ -261,7 +234,7 @@ $(".navigation-content ul li a").hover(function(e) {
     }
 
 
-          //CUSTOM CURSOR ANIMATION
+        
           $(function(){
             var $cursor = $('.cursor');
             var $cursortwo = $('.cursor-two')
@@ -312,7 +285,7 @@ $(".navigation-content ul li a").hover(function(e) {
           
 
 
-          //CIRCLE EFFECT ON CONTACT PAGE
+        
           if(document.querySelector('#rotated')){
             $(function(){
                 var circleType = new CircleType(document.getElementById('rotated')).radius(0);
@@ -325,7 +298,7 @@ $(".navigation-content ul li a").hover(function(e) {
 
 
 
-  //SWIPER ON SONGS PAGE
+
 
   if(document.querySelector('.swiper-container')){
     new Swiper('.swiper-container', {
