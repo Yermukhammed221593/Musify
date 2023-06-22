@@ -326,6 +326,9 @@ $(".navigation-content ul li a").hover(function(e) {
       });
   }
 
+function myFunction() {
+    document.getElementById("demo").style.backgroundColor = "green";
+  }
 
 
 
